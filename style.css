@@ -1,0 +1,45 @@
+.accordionn {
+    background-color: #3695eb;
+    color: #fff;
+    cursor: pointer;
+    padding: 6px 12px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 17px;
+    line-height: 30px;
+    transition: 0.4s;
+    width: 50%;
+    margin: 0 auto;
+}
+ 
+.accordionn.active, .accordionn:hover {
+    background-color: #3781c3;
+}
+ 
+.accordionn:after {
+    content: '\002B';
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    float: right;
+    font-size: 26px;
+}
+ 
+.accordionn.active:after {
+    content: "\2212";
+}
+ 
+.panel, .panel2,.panel3 {
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin:0;
+    text-align: left;
+    width: 50%;
+    margin: 0 auto;
+}
+ 
+.panel>div {
+    padding:6px 10px;
+}
